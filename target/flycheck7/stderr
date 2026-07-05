@@ -1,68 +1,15 @@
-   0.064278800s  INFO prepare_target{force=false package_id=main v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\main) target="main"}: cargo::core::compiler::fingerprint: stale: changed env "CLIPPY_ARGS"
-   0.064309400s  INFO prepare_target{force=false package_id=main v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\main) target="main"}: cargo::core::compiler::fingerprint:        Some("--no-deps__CLIPPY_HACKERY__") != Some("")
-   0.064389500s  INFO prepare_target{force=false package_id=main v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\main) target="main"}: cargo::core::compiler::fingerprint: fingerprint error for main v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\main)/Check { test: false }/TargetInner { name: "main", doc: true, ..: with_path("D:\\03. Presley\\School Sub\\Computing\\Rust\\ws_interpreter\\main\\src\\main.rs", Edition2024) }
-   0.064414900s  INFO prepare_target{force=false package_id=main v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\main) target="main"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\target\debug\.fingerprint\main-d55bd9df11e8fe80\bin-main`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_filter_source_repo
-  11: git_libgit2_prerelease
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: <unknown>
-  16: git_midx_writer_dump
-  17: git_filter_source_repo
-  18: git_midx_writer_dump
-  19: BaseThreadInitThunk
-  20: RtlUserThreadStart
-   0.072124400s  INFO prepare_target{force=false package_id=ws_interpreter v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\lib) target="ws_interpreter"}: cargo::core::compiler::fingerprint: fingerprint dirty for ws_interpreter v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\lib)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("ws_interpreter", ["lib"], "D:\\03. Presley\\School Sub\\Computing\\Rust\\ws_interpreter\\lib\\src\\lib.rs", Edition2024) }
-   0.072152700s  INFO prepare_target{force=false package_id=ws_interpreter v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\lib) target="ws_interpreter"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedEnv { var: "CLIPPY_ARGS", previous: Some("--no-deps__CLIPPY_HACKERY__"), current: Some("") }))
-   0.072585900s  INFO prepare_target{force=false package_id=main v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\main) target="main"}: cargo::core::compiler::fingerprint: fingerprint error for main v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\main)/Check { test: true }/TargetInner { name: "main", doc: true, ..: with_path("D:\\03. Presley\\School Sub\\Computing\\Rust\\ws_interpreter\\main\\src\\main.rs", Edition2024) }
-   0.072600900s  INFO prepare_target{force=false package_id=main v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\main) target="main"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\target\debug\.fingerprint\main-a25e3dfa0f255247\test-bin-main`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_filter_source_repo
-  11: git_libgit2_prerelease
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: <unknown>
-  16: git_midx_writer_dump
-  17: git_filter_source_repo
-  18: git_midx_writer_dump
-  19: BaseThreadInitThunk
-  20: RtlUserThreadStart
-   0.073059100s  INFO prepare_target{force=false package_id=ws_interpreter v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\lib) target="ws_interpreter"}: cargo::core::compiler::fingerprint: stale: changed "D:\\03. Presley\\School Sub\\Computing\\Rust\\ws_interpreter\\lib\\src\\lib.rs"
-   0.073070600s  INFO prepare_target{force=false package_id=ws_interpreter v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\lib) target="ws_interpreter"}: cargo::core::compiler::fingerprint:           (vs) "D:\\03. Presley\\School Sub\\Computing\\Rust\\ws_interpreter\\target\\debug\\.fingerprint\\ws_interpreter-c3c8d7bb6d539839\\dep-test-lib-ws_interpreter"
-   0.073075900s  INFO prepare_target{force=false package_id=ws_interpreter v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\lib) target="ws_interpreter"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13427755593, nanos: 532950900 } < FileTime { seconds: 13427755614, nanos: 871236600 }
-   0.073363700s  INFO prepare_target{force=false package_id=ws_interpreter v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\lib) target="ws_interpreter"}: cargo::core::compiler::fingerprint: fingerprint dirty for ws_interpreter v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\lib)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("ws_interpreter", ["lib"], "D:\\03. Presley\\School Sub\\Computing\\Rust\\ws_interpreter\\lib\\src\\lib.rs", Edition2024) }
-   0.073385600s  INFO prepare_target{force=false package_id=ws_interpreter v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\lib) target="ws_interpreter"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "D:\\03. Presley\\School Sub\\Computing\\Rust\\ws_interpreter\\target\\debug\\.fingerprint\\ws_interpreter-c3c8d7bb6d539839\\dep-test-lib-ws_interpreter", reference_mtime: FileTime { seconds: 13427755593, nanos: 532950900 }, stale: "D:\\03. Presley\\School Sub\\Computing\\Rust\\ws_interpreter\\lib\\src\\lib.rs", stale_mtime: FileTime { seconds: 13427755614, nanos: 871236600 } }))
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   0.159501000s  INFO prepare_target{force=false package_id=main v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\main) target="main"}: cargo::core::compiler::fingerprint: stale: changed env "CLIPPY_ARGS"
+   0.159543000s  INFO prepare_target{force=false package_id=main v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\main) target="main"}: cargo::core::compiler::fingerprint:        Some("--no-deps__CLIPPY_HACKERY__") != Some("")
+   0.159829700s  INFO prepare_target{force=false package_id=main v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\main) target="main"}: cargo::core::compiler::fingerprint: fingerprint dirty for main v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\main)/Check { test: false }/TargetInner { name: "main", doc: true, ..: with_path("D:\\03. Presley\\School Sub\\Computing\\Rust\\ws_interpreter\\main\\src\\main.rs", Edition2024) }
+   0.159872300s  INFO prepare_target{force=false package_id=main v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\main) target="main"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDepFingerprint { unit: UnitIndex(2) })
+   0.160668100s  INFO prepare_target{force=false package_id=ws_interpreter v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\lib) target="ws_interpreter"}: cargo::core::compiler::fingerprint: fingerprint dirty for ws_interpreter v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\lib)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("ws_interpreter", ["lib"], "D:\\03. Presley\\School Sub\\Computing\\Rust\\ws_interpreter\\lib\\src\\lib.rs", Edition2024) }
+   0.160709400s  INFO prepare_target{force=false package_id=ws_interpreter v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\lib) target="ws_interpreter"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedEnv { var: "CLIPPY_ARGS", previous: Some("--no-deps__CLIPPY_HACKERY__"), current: Some("") }))
+   0.161391500s  INFO prepare_target{force=false package_id=main v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\main) target="main"}: cargo::core::compiler::fingerprint: fingerprint dirty for main v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\main)/Check { test: true }/TargetInner { name: "main", doc: true, ..: with_path("D:\\03. Presley\\School Sub\\Computing\\Rust\\ws_interpreter\\main\\src\\main.rs", Edition2024) }
+   0.161423800s  INFO prepare_target{force=false package_id=main v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\main) target="main"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDepFingerprint { unit: UnitIndex(2) })
     Checking ws_interpreter v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\lib)
     Checking main v0.1.0 (D:\03. Presley\School Sub\Computing\Rust\ws_interpreter\main)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.22s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.28s
